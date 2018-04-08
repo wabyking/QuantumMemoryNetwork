@@ -144,4 +144,4 @@ with tf.Session(graph=graph) as sess:
         print(("{}/{} (epoch {}), train_loss = {:.3f}, time/batch = {:.3f}" .format(
                 b, my_data.num_batches,
                 num_epochs-1, train_loss, end - start)))
-        np.save('wrd_embeds', norm_embed.eval())
+    np.save('wrd_embeds', norm_embed.eval())
